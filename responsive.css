@@ -68,7 +68,7 @@
         font-size: 12px;
     }
     nav ul{
-        display: block;
+        display: none;
     }
     #dashp{
         margin-top: 0.1em;
