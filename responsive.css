@@ -1,0 +1,76 @@
+.site{
+    max-width: 80vw;
+    margin: 0 auto;
+}
+@media (width > 1440px){
+    .site{
+        max-width: 1440px;
+    }
+}
+
+@media (width <= 1024px){
+   .site{
+    max-width: 100vw;
+   }
+}
+@media (width > 768px){
+    .labelblock{
+        display: none;
+    }
+}
+
+@media (width <= 768px){
+    .site{
+     max-width: 100vw;
+    }
+    .card{
+        max-width: 40%;
+    }
+    .footercontent{
+        flex-direction: column;
+    }
+    footer section{
+        max-width: 100%;
+    }
+    footer h3{
+        margin: 0;
+    }
+    nav ul{
+        display: none;
+    }
+    .site-header{
+        align-items: flex-start;
+    }
+    nav ul li::before{
+        content: url(Images/smile.png) ' ';
+    }
+    #toggle:checked + .site nav ul{
+        display: block;
+        position: absolute;
+        top: 3.5em;
+        right:1.5em;
+    }
+    .labelblock{
+       display: block;
+       position: absolute;
+       top: 2em;
+       right: 2em;
+       color: black;
+    }
+
+
+     
+
+ }
+
+ @media (width <=425px){
+    html{
+        font-size: 12px;
+    }
+    nav ul{
+        display: block;
+    }
+    #dashp{
+        margin-top: 0.1em;
+    }
+ }
